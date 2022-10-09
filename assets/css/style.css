@@ -1,0 +1,154 @@
+/* CSS Variables - used to easily change the overall theme of the website */
+
+:root {
+    --dark: purple;
+    --light: white;
+    --mid: pink;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+html{scroll-behavior: smooth;}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+  text-align:left;
+  background: radial-gradient(var(--mid),var(--dark));
+  color: #fff;
+}
+
+div #sub-info{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+
+
+
+nav {
+  display: flex;
+  background-color: #d8a47f;
+}
+
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: left;
+  transition: background-color 2s ease-out;
+  transition: text-size-adjust 2s ease-out;
+}  
+
+nav a:hover {
+  background-color: magenta;
+  color: var(--mid);
+  text-decoration: underline var(--mid); 
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hero {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+aside {
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 20px;
+}
+
+.about-me {
+  flex: 1 0 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 400px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.about-me img {
+  width: 100%;
+  min-width: 400px;
+}
+
+section {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+}
+
+section div{
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero-banner {
+  background-color: #fff;
+  width: 100%;
+  padding: 20px;
+  height: 600px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero-banner img{
+  width: 100%;
+  align-items: center;
+}
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  nav {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body */
+  aside {
+    order: 2;
+  }
+  
+  /* Change the navbar and footer background */
+  nav,
+  footer {
+    background-color: #bb8588;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-me {
+    background-color: #8ac4ff;
+  }
+}
