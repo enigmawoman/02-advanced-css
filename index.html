@@ -1,68 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sarah La Grue | Full Stack Development Student</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sarah La Grue | Full Stack Programming Student</title>
 </head>
-
 <body>
-    <header>
-      <h1>Sarah La Grue</h1>
-      <div id="sub-info"> 
-        <h2>a.k.a. <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="GitHub logo"><a href="https://github.com/enigmawoman"><strong>@enigmawoman</strong></a> </h2>
-        <p>Insight into the coding world of the enigmawoman.....</p>
-      </div>
-      <div>
-        <nav>
-          <a href="#About-Me-Link">About Me</a>
-          <a href="#Most-Recent-Link">Most Recent</a>
-          <a href="#Project-2-Link">Project 2</a>
-          <a href="#Project-3-Link">Project 3</a>
-        </nav>
-       </div>  
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Sarah La Grue |<span class="logo-part"> Full Stack Programming Student</span></div>
+            <ul class="nav">
+                <li>
+                    <a href="#about-me">About</a>
+                </li>
+                <li>
+                  <a href="#portfolio-me">Portfolio</a>
+               </li>
+               <li>
+                  <a href="#upcoming-me">Upcoming Projects</a>
+              </li>
+                <li>
+                  <a href="#contact-me">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="header" alt="background image showing code on a computer screen">
+        <div class="container">
+        </div>
+        
     </header>
 
-    <main>
-      <img id="hero" src="./assets/images/pexels-pixabay-270404.jpg" alt="close up image of code on screen">
 
-      <aside>
-        <h2 id="About-Me-Link" >About Me ... <a href="https://github.com/enigmawoman"> @enigmawoman</a></h2>
-        <div class="about-me">
-          <img src="./assets/images/unicorn.png" alt="cartoon unicorn head">
-        </div>
-        <p>
-          It will stack BELOW the body once the screen hits 768px or smaller.
-        </p>
-        <div>
-          <h3>Fun Facts</h3>
-        </div>
-      </aside>
 
-      <section>
-        <div id="Most-Recent-Link" class="hero-banner">
-          <h2>MOST RECENT</h2>
-            <img src="./assets/02-advanced-css-homework-demo.gif"> hero-banner
-        </div>
-        <div id="Project-2-Link">
-          <h3>Project 2</h3>
-        </div>
-        <div id="Project-3-Link">
-          <h3>Project 3</h3>
-        </div>
+    <section class="boxes">
 
-      </section>
-    </main>
-  
-      <footer>
-        <h3>
-          Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-          window!
-        </h3>
-      </footer>
+        <div class="container">
+
+            <div id="about-me" class="box">
+                <h2>Sarah La Grue</h2>
+                <p><strong>About me:</strong> a current student of University of Birmingham's coding bootcamps, I am studying Full Stack Programming. 
+                  I took this course, because for the past year or so I have been working on website design, mostly production of content and layout design. 
+                  With my previous IT background, wanted to learn more on the ‘engines’ behind web design and development and be able to take the imagery and 
+                  content i’ve created and implement the website changes myself. I see the completion of this course as a way to get into a career where i can satisfy my engineering side, as well as the creative side of my personality.</p>
+                <p>With this portfolio site, I am aiming to showcase the skills I learn week on week, so please visit regularly to see my progress!</p>
+                <p><strong>Fun Facts:</strong>
+                  <ul>
+                    <li>Certified "Geordie" - i was born and raised in the North East of England.</li>
+                    <li>Have a motorcycle license and enjoy short and long road trips as both a rider and a pillion.</li>
+                  </ul>
+                </p>
+                <img id="unicorn" src="./assets/images/SLG_300x.jpg" alt="headshot photograph of Sarah La Grue">
+              </div>
+            <div id="portfolio-me" class="box">
+                <h2>Portfolio | Latest Work</h2>
+                <a href=https://enigmawoman.github.io/01-html-git-css> <img id="main" src="./assets/images/horiseon-screenshot-2.jpg" alt="screen shot of final application, Horiseon website"></a>
+                <h3><a href=https://enigmawoman.github.io/01-html-git-css><span class="title">Horiseon | Marketing & SEO</span></a></h3>
+                <p>Working with the client, Horiseon, to bring their website code up to latest standards, for semantic elements and accessbility.</p>
+            </div>
+            <div id="upcoming-me" class="box">
+              <h2>Upcoming Projects</h2>
+              <p>New projects COMING SOON</p>
+              <div class="internal-container">   
+                <img class="image" src="./assets/images/laptops.jpg" alt="two laptops on a desk">
+                <img class="image" src="./assets/images/comingsoon.jpg" alt="laptop with a small under construction sign on the keyboard">
+                <img class="image" src="./assets/images/wireframes.jpg" alt="drawing of wireframes for website layout">
+              </div>
+              
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+    <hr class="container">
+
+    <section id="contact-me" class="contact">
+      <div class="container">
+        <div class="item">
+          <h2>GitHub</h2>
+          <p>Find me on GitHub</p>
+          <br>
+          <img src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="white github logo">
+          <br>
+          <a href="https://github.com/enigmawoman"><span class="social"> @enigmawoman</span></a>
+        </div>
+        <div class="item">
+            <h2>LinkedIn</h2>
+            <p>Connect with me</p>
+            <br>
+            <img id="LinkedIn" src="./assets/images/LinkedIn-Logos/LI-In-Bug.png" alt="linkedin logo">
+            <br>
+            <a href="https://www.linkedin.com/in/sarah-la-grue-8677311a/"><span class="social"> Sarah La Grue</span></a>
+        </div>
+        <div class="item">
+            <h2>Email</h2>
+            <p>Send me a some mail</p>
+            <br>
+            <img id="mail" src="./assets/images/small-mail-envelope.png" alt="small white envelope outline">
+            <br>
+            <a href="#"><span class="social">@enigmawoman</span></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h3 id="sign-off">&hearts; Handmade by SLG | 2022 &hearts;</h3>
+      </div>
+      
+    </footer>
     
 </body>
 </html>
