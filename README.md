@@ -36,7 +36,7 @@ I have been careful to use correct semantic structure within the HTML and CSS fi
 
 ## Link to deployed application.
 
-<a href="[https://www.google.com/](https://enigmawoman.github.io/02-advanced-css/)" target="_blank">Deployed Portfolio Application</a>
+<a href="https://enigmawoman.github.io/02-advanced-css/">Deployed Portfolio Application</a>
 
 ## Screenshot of the finished website 
 
