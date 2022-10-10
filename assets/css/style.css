@@ -1,3 +1,4 @@
+/* These are the variables used throughout the CSS to quickly change the overall themes */
 :root {
   --dark: purple;
   --light: white;
@@ -6,12 +7,14 @@
   --darkgrey: rgb(67, 67, 67)
 }
 
+/* universal styling */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* this creates smooth scrolling from links to content */
 html{scroll-behavior: smooth;}
 
 body {
@@ -31,10 +34,12 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* removes the bullet points from lists */
 ul {
   list-style-type: none;
 }
 
+/* sets the container parameters throughout most of the main sections of the site */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -51,7 +56,7 @@ ul {
   font-size: x-large;
   font-weight: bold;
 }
-
+/* the span attributes allow for changing how the hyperlinks look */
 span.logo-part {
   font-size: x-large;
   font-weight: normal;
@@ -77,7 +82,7 @@ span.social {
   font-size: 18px;
   font-weight: bold;
 }
-
+/* below defines the interactivity when a user hovers their pointer over the nav menu items */
 .navbar a:hover {
   background-color: var(--dark);
   border-radius: 5px;
@@ -105,6 +110,7 @@ span.social {
   text-align: center;
 }
 
+/* sets the parameters for the background and the link to the background image */
 .header {
   background-color: grey;
   background-image: url(../images/pexels-pixabay-270404.jpg);
@@ -121,11 +127,6 @@ span.social {
   line-height: 1.2;
 }
 
-/* not sure this is doing much */
-/* .header img {
-  max-width: 400px;
-  padding: 20px 20px;
-} */
 
 .header .container {
  display: flex; 
@@ -211,6 +212,8 @@ hr {
 #mail {
   height: 40px;
 }
+
+/* media queries to adjust site according to the browser window size */
 
 @media(max-width: 768px) {
   .header .container {
