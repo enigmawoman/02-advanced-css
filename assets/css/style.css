@@ -148,6 +148,24 @@ span.social {
   align-items: center;
 }
 
+.project-image {
+  max-width: 900px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+#horiseon-pro{
+  margin: 20px;
+  padding: 10px;
+}
+
+#wow-project-one{
+  margin: 20px;
+  padding: 10px;
+}
+
 .image {
   flex: 1;
   max-width: 250px;
@@ -163,6 +181,12 @@ span.social {
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0,0,0,0.6);
   padding: 15px 20px;
+  text-align: center;
+}
+
+#latest-work {
+  display: flex;
+  flex-direction: column;
 }
 
 hr {
@@ -222,6 +246,12 @@ hr {
       display: block;
       text-align: center;
   }
+
+  #latest-work {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -249,6 +279,14 @@ hr {
     max-width: 250px;
     margin: 5px 10px;
     padding: 10px 10px;
+  }
+
+  .project-image {
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
   }
 
 }
